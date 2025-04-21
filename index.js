@@ -28,9 +28,7 @@ function authToken(req, res, next) {
     })
 }
 
-
 App.use(express.json())
-
 
 App.post('/register', async (req, res) => {
     const { username, password } = req.body;
